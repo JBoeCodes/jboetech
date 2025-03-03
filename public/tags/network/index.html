@@ -121,8 +121,64 @@
 
     </div>
     
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/tags/gaming">Gaming</a></li>
+        
+      
+        
+          <li><a href="/">Home</a></li>
+        
+      
+        
+          <li><a href="/tags/linux">Linux</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
     
   </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/tags/gaming" >Gaming</a></li>
+        
+      
+        
+          <li><a href="/" >Home</a></li>
+        
+      
+      
+        <li>
+          <ul class="menu">
+            <li class="menu__trigger">Show more&nbsp;▾</li>
+            <li>
+              <ul class="menu__dropdown">
+                
+                  
+                    <li><a href="/tags/linux" >Linux</a></li>
+                  
+                
+              </ul>
+            </li>
+          </ul>
+        </li>
+      
+    
+  </ul>
+</nav>
+
   
 </header>
 
@@ -137,7 +193,7 @@
         <h1 class="post-title">
           <a href="https://jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/">How I Auto Mount Network Drives in Linux</a>
         </h1>
-        <div class="post-meta"><time class="post-date">2025-01-19</time></div>
+        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
 
         
           <span class="post-tags">
@@ -178,6 +234,72 @@
         
           <div>
             <a class="read-more button inline" href="/posts/how-i-auto-mount-network-drives-in-linux/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="https://jboetech.com/posts/jboetech-plex-install/">JBoeTech Plex Install</a>
+        </h1>
+        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://jboetech.com/tags/linux/">linux</a>&nbsp;
+            
+            #<a href="https://jboetech.com/tags/network/">network</a>&nbsp;
+            
+            #<a href="https://jboetech.com/tags/plex/">plex</a>&nbsp;
+            
+            #<a href="https://jboetech.com/tags/server/">server</a>&nbsp;
+            
+            #<a href="https://jboetech.com/tags/blog/">blog</a>&nbsp;
+            
+          </span>
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Distro: Ubuntu Server
+notes: Install OpenSSH
+dependencies: nano, cifs-utils, Plex, OpenSSH
+See also: [[How I Auto Mount Network Drives in Linux]]</p>
+<ol>
+<li>Add Plex to the repo:</li>
+</ol>
+<pre tabindex="0"><code>echo deb [https://downloads.plex.tv/repo/deb](https://downloads.plex.tv/repo/deb) public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+</code></pre><pre tabindex="0"><code>curl [https://downloads.plex.tv/plex-keys/PlexSign.key](https://downloads.plex.tv/plex-keys/PlexSign.key) | sudo apt-key add -
+</code></pre><ol start="2">
+<li>Update the repo</li>
+</ol>
+<pre tabindex="0"><code>sudo apt update
+</code></pre><ol start="3">
+<li>Install Plex</li>
+</ol>
+<pre tabindex="0"><code>sudo apt install plexmediaserver
+</code></pre><ol start="4">
+<li>Auto start Plex</li>
+</ol>
+<pre tabindex="0"><code>sudo systemctl enable plexmediaserver.service
+</code></pre><ol start="5">
+<li>
+<p>Connect to the web server:
+ip.address:32400/web</p>
+</li>
+<li>
+<p>Connect your files
+If you have not added network shares to your plex machine, see [[01192025 Auto Mount Network Drives in Linux]]</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/jboetech-plex-install/">Read more</a>
           </div>
         
       </article>

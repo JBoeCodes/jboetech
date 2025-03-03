@@ -8,52 +8,9 @@
     <language>en</language>
     <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jboetech.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>No Mans Sky - My Goals</title>
-      <link>https://jboetech.com/posts/no-mans-sky---my-goals/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://jboetech.com/posts/no-mans-sky---my-goals/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://jboetech.com/images/Pasted%20image%2020250303130238.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-i-want-to-accomplish&#34;&gt;What I want to accomplish:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Crash markets with Cobalt and Chlorine to make money&lt;/li&gt;
-&lt;li&gt;Create &amp;ldquo;THE MARKET CRASHER&amp;rdquo;
-a. Hauler class with plenty of storage for chlorine and cobalt&lt;/li&gt;
-&lt;li&gt;Oxygen farms everywhere&lt;/li&gt;
-&lt;li&gt;Cool starter base&lt;/li&gt;
-&lt;li&gt;S class freighter&lt;/li&gt;
-&lt;li&gt;Experience the new content&lt;/li&gt;
-&lt;li&gt;Create a stasis device farm&lt;/li&gt;
-&lt;li&gt;have multiple bases on multiple planets
-b. 1 for each farm or other reasons&lt;/li&gt;
-&lt;li&gt;Gas giants, Ruins, Other new generated planets&lt;/li&gt;
-&lt;li&gt;Cool freighter base&lt;/li&gt;
-&lt;li&gt;more?&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;</description>
-      <content>&lt;p&gt;&lt;img src=&#34;https://jboetech.com/images/Pasted%20image%2020250303130238.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-i-want-to-accomplish&#34;&gt;What I want to accomplish:&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Crash markets with Cobalt and Chlorine to make money&lt;/li&gt;
-&lt;li&gt;Create &amp;ldquo;THE MARKET CRASHER&amp;rdquo;
-a. Hauler class with plenty of storage for chlorine and cobalt&lt;/li&gt;
-&lt;li&gt;Oxygen farms everywhere&lt;/li&gt;
-&lt;li&gt;Cool starter base&lt;/li&gt;
-&lt;li&gt;S class freighter&lt;/li&gt;
-&lt;li&gt;Experience the new content&lt;/li&gt;
-&lt;li&gt;Create a stasis device farm&lt;/li&gt;
-&lt;li&gt;have multiple bases on multiple planets
-b. 1 for each farm or other reasons&lt;/li&gt;
-&lt;li&gt;Gas giants, Ruins, Other new generated planets&lt;/li&gt;
-&lt;li&gt;Cool freighter base&lt;/li&gt;
-&lt;li&gt;more?&amp;hellip;&lt;/li&gt;
-&lt;/ol&gt;
-</content>
-    </item>
-    
-    <item>
       <title>How I Auto Mount Network Drives in Linux</title>
       <link>https://jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/</link>
-      <pubDate>Sun, 19 Jan 2025 14:19:00 +0000</pubDate>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>https://jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/</guid>
       <description>&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
@@ -102,6 +59,118 @@ b. 1 for each farm or other reasons&lt;/li&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo chown -R plex:plex /mnt/movies
 sudo chmod -R 775 /mnt/movies
 &lt;/code&gt;&lt;/pre&gt;</content>
+    </item>
+    
+    <item>
+      <title>JBoeTech Plex Install</title>
+      <link>https://jboetech.com/posts/jboetech-plex-install/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jboetech.com/posts/jboetech-plex-install/</guid>
+      <description>&lt;p&gt;Distro: Ubuntu Server
+notes: Install OpenSSH
+dependencies: nano, cifs-utils, Plex, OpenSSH
+See also: [[How I Auto Mount Network Drives in Linux]]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add Plex to the repo:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo deb [https://downloads.plex.tv/repo/deb](https://downloads.plex.tv/repo/deb) public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl [https://downloads.plex.tv/plex-keys/PlexSign.key](https://downloads.plex.tv/plex-keys/PlexSign.key) | sudo apt-key add -
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Update the repo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Install Plex&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install plexmediaserver
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Auto start Plex&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo systemctl enable plexmediaserver.service
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to the web server:
+ip.address:32400/web&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect your files
+If you have not added network shares to your plex machine, see [[01192025 Auto Mount Network Drives in Linux]]&lt;/p&gt;</description>
+      <content>&lt;p&gt;Distro: Ubuntu Server
+notes: Install OpenSSH
+dependencies: nano, cifs-utils, Plex, OpenSSH
+See also: [[How I Auto Mount Network Drives in Linux]]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add Plex to the repo:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo deb [https://downloads.plex.tv/repo/deb](https://downloads.plex.tv/repo/deb) public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;curl [https://downloads.plex.tv/plex-keys/PlexSign.key](https://downloads.plex.tv/plex-keys/PlexSign.key) | sudo apt-key add -
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Update the repo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Install Plex&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt install plexmediaserver
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Auto start Plex&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo systemctl enable plexmediaserver.service
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Connect to the web server:
+ip.address:32400/web&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Connect your files
+If you have not added network shares to your plex machine, see [[01192025 Auto Mount Network Drives in Linux]]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>No Mans Sky - My Goals</title>
+      <link>https://jboetech.com/posts/no-mans-sky---my-goals/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jboetech.com/posts/no-mans-sky---my-goals/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://jboetech.com/images/Pasted%20image%2020250303130238.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-i-want-to-accomplish&#34;&gt;What I want to accomplish:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crash markets with Cobalt and Chlorine to make money&lt;/li&gt;
+&lt;li&gt;Create &amp;ldquo;THE MARKET CRASHER&amp;rdquo;
+a. Hauler class with plenty of storage for chlorine and cobalt&lt;/li&gt;
+&lt;li&gt;Oxygen farms everywhere&lt;/li&gt;
+&lt;li&gt;Cool starter base&lt;/li&gt;
+&lt;li&gt;S class freighter&lt;/li&gt;
+&lt;li&gt;Experience the new content&lt;/li&gt;
+&lt;li&gt;Create a stasis device farm&lt;/li&gt;
+&lt;li&gt;have multiple bases on multiple planets
+b. 1 for each farm or other reasons&lt;/li&gt;
+&lt;li&gt;Gas giants, Ruins, Other new generated planets&lt;/li&gt;
+&lt;li&gt;Cool freighter base&lt;/li&gt;
+&lt;li&gt;more?&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;</description>
+      <content>&lt;p&gt;&lt;img src=&#34;https://jboetech.com/images/Pasted%20image%2020250303130238.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-i-want-to-accomplish&#34;&gt;What I want to accomplish:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Crash markets with Cobalt and Chlorine to make money&lt;/li&gt;
+&lt;li&gt;Create &amp;ldquo;THE MARKET CRASHER&amp;rdquo;
+a. Hauler class with plenty of storage for chlorine and cobalt&lt;/li&gt;
+&lt;li&gt;Oxygen farms everywhere&lt;/li&gt;
+&lt;li&gt;Cool starter base&lt;/li&gt;
+&lt;li&gt;S class freighter&lt;/li&gt;
+&lt;li&gt;Experience the new content&lt;/li&gt;
+&lt;li&gt;Create a stasis device farm&lt;/li&gt;
+&lt;li&gt;have multiple bases on multiple planets
+b. 1 for each farm or other reasons&lt;/li&gt;
+&lt;li&gt;Gas giants, Ruins, Other new generated planets&lt;/li&gt;
+&lt;li&gt;Cool freighter base&lt;/li&gt;
+&lt;li&gt;more?&amp;hellip;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
     </item>
     
   </channel>

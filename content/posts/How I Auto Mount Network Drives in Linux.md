@@ -1,6 +1,6 @@
 ---
 title: How I Auto Mount Network Drives in Linux
-Date: 2025-01-19T14:19:00
+Date: 2025-03-03
 tags:
   - linux
   - network
