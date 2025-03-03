@@ -184,48 +184,18 @@ b. 1 for each farm or other reasons</li>
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="https://blog.jboetech.com/posts/test-3/">Test 3</a>
+          <a href="https://blog.jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/">How I Auto Mount Network Drives in Linux</a>
         </h2>
-        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
+        <div class="post-meta"><time class="post-date">2025-01-19</time></div>
 
         
           <span class="post-tags">
             
-            #<a href="https://blog.jboetech.com/tags/blog/">blog</a>&nbsp;
+            #<a href="https://blog.jboetech.com/tags/linux/">linux</a>&nbsp;
             
-            #<a href="https://blog.jboetech.com/tags/test/">test</a>&nbsp;
+            #<a href="https://blog.jboetech.com/tags/network/">network</a>&nbsp;
             
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <h2 id="please-work-finally">Please work finally</h2>
-<p>I&rsquo;m begging you
-!<img src="/images/Pasted%20image%2020250303105921.png" alt="Image Description"></p>
-          
-        </div>
-
-        
-           <div>
-            <a class="read-more button inline" href="/posts/test-3/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="https://blog.jboetech.com/posts/test-note/">Test Note</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://blog.jboetech.com/tags/test/">test</a>&nbsp;
+            #<a href="https://blog.jboetech.com/tags/cifs/">cifs</a>&nbsp;
             
             #<a href="https://blog.jboetech.com/tags/blog/">blog</a>&nbsp;
             
@@ -237,47 +207,26 @@ b. 1 for each farm or other reasons</li>
 
         <div class="post-content">
           
-            <p>Does this work?</p>
-<p>!<img src="/images/Pasted%20image%2020250303094436.png" alt="Image Description"></p>
+            <h1 id="steps">Steps</h1>
+<ol>
+<li>
+<p><strong>Install cifs-utils</strong>: This package is necessary for mounting CIFS/SMB shares. You can install it using your distribution’s package manager. For example, on Debian-based systems, you can use:</p>
+<pre tabindex="0"><code>sudo apt-get install cifs-utils
+</code></pre><p>On Arch Linux, you can use:</p>
+<pre tabindex="0"><code>sudo pacman -S cifs-utils
+</code></pre></li>
+<li>
+<p><strong>Create a Mount Point</strong>: Create a directory where the network drive will be mounted. For example:</p>
+<pre tabindex="0"><code>sudo mkdir /mnt/networkdrivename
+</code></pre></li>
+<li>
+<p><strong>Edit /etc/fstab</strong>: Add an entry to your <code>/etc/fstab</code> file to automatically mount the network drive at boot. Use the following format:</p>
           
         </div>
 
         
            <div>
-            <a class="read-more button inline" href="/posts/test-note/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="https://blog.jboetech.com/posts/test-number-2/">Test Number 2</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://blog.jboetech.com/tags/test/">test</a>&nbsp;
-            
-            #<a href="https://blog.jboetech.com/tags/blog/">blog</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>Please let this work</p>
-<p>!<img src="/images/Pasted%20image%2020250303104953.png" alt="Image Description"></p>
-          
-        </div>
-
-        
-           <div>
-            <a class="read-more button inline" href="/posts/test-number-2/">Read more</a>
+            <a class="read-more button inline" href="/posts/how-i-auto-mount-network-drives-in-linux/">Read more</a>
           </div>
         
       </article>
