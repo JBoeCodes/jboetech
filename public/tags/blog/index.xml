@@ -51,44 +51,57 @@ b. 1 for each farm or other reasons&lt;/li&gt;
     </item>
     
     <item>
-      <title>Test 3</title>
-      <link>https://blog.jboetech.com/posts/test-3/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <title>How I Auto Mount Network Drives in Linux</title>
+      <link>https://blog.jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/</link>
+      <pubDate>Sun, 19 Jan 2025 14:19:00 +0000</pubDate>
       
-      <guid>https://blog.jboetech.com/posts/test-3/</guid>
-      <description>&lt;h2 id=&#34;please-work-finally&#34;&gt;Please work finally&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m begging you
-!&lt;img src=&#34;https://blog.jboetech.com/images/Pasted%20image%2020250303105921.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h2 id=&#34;please-work-finally&#34;&gt;Please work finally&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m begging you
-!&lt;img src=&#34;https://blog.jboetech.com/images/Pasted%20image%2020250303105921.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Test Note</title>
-      <link>https://blog.jboetech.com/posts/test-note/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.jboetech.com/posts/test-note/</guid>
-      <description>&lt;p&gt;Does this work?&lt;/p&gt;
-&lt;p&gt;!&lt;img src=&#34;https://blog.jboetech.com/images/Pasted%20image%2020250303094436.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;p&gt;Does this work?&lt;/p&gt;
-&lt;p&gt;!&lt;img src=&#34;https://blog.jboetech.com/images/Pasted%20image%2020250303094436.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
-    </item>
-    
-    <item>
-      <title>Test Number 2</title>
-      <link>https://blog.jboetech.com/posts/test-number-2/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.jboetech.com/posts/test-number-2/</guid>
-      <description>&lt;p&gt;Please let this work&lt;/p&gt;
-&lt;p&gt;!&lt;img src=&#34;https://blog.jboetech.com/images/Pasted%20image%2020250303104953.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;p&gt;Please let this work&lt;/p&gt;
-&lt;p&gt;!&lt;img src=&#34;https://blog.jboetech.com/images/Pasted%20image%2020250303104953.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
-</content>
+      <guid>https://blog.jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/</guid>
+      <description>&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install cifs-utils&lt;/strong&gt;: This package is necessary for mounting CIFS/SMB shares. You can install it using your distribution’s package manager. For example, on Debian-based systems, you can use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install cifs-utils
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On Arch Linux, you can use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S cifs-utils
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a Mount Point&lt;/strong&gt;: Create a directory where the network drive will be mounted. For example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /mnt/networkdrivename
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Edit /etc/fstab&lt;/strong&gt;: Add an entry to your &lt;code&gt;/etc/fstab&lt;/code&gt; file to automatically mount the network drive at boot. Use the following format:&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;steps&#34;&gt;Steps&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install cifs-utils&lt;/strong&gt;: This package is necessary for mounting CIFS/SMB shares. You can install it using your distribution’s package manager. For example, on Debian-based systems, you can use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt-get install cifs-utils
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;On Arch Linux, you can use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo pacman -S cifs-utils
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create a Mount Point&lt;/strong&gt;: Create a directory where the network drive will be mounted. For example:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir /mnt/networkdrivename
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Edit /etc/fstab&lt;/strong&gt;: Add an entry to your &lt;code&gt;/etc/fstab&lt;/code&gt; file to automatically mount the network drive at boot. Use the following format:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;//server_ip/share_name /mnt/networkdrive cifs credentials=/etc/cifs-credentials 0 0
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Replace &lt;code&gt;server_ip&lt;/code&gt;, &lt;code&gt;share_name&lt;/code&gt;, &lt;code&gt;your_username&lt;/code&gt;, and &lt;code&gt;your_password&lt;/code&gt; with the appropriate values for your network drive.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Test the Mount&lt;/strong&gt;: After editing &lt;code&gt;/etc/fstab&lt;/code&gt;, you can test the mount without rebooting by running:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mount -a
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Check Logs&lt;/strong&gt;: If the mount fails, check the system logs for errors. For example, on Debian-based systems, you can use:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo journalctl -xe
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Give Plex permission to folders&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo chown -R plex:plex /mnt/movies
+sudo chmod -R 775 /mnt/movies
+&lt;/code&gt;&lt;/pre&gt;</content>
     </item>
     
   </channel>

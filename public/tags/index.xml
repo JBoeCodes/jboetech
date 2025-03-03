@@ -38,11 +38,31 @@
     </item>
     
     <item>
-      <title>Test</title>
-      <link>https://blog.jboetech.com/tags/test/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <title>Cifs</title>
+      <link>https://blog.jboetech.com/tags/cifs/</link>
+      <pubDate>Sun, 19 Jan 2025 14:19:00 +0000</pubDate>
       
-      <guid>https://blog.jboetech.com/tags/test/</guid>
+      <guid>https://blog.jboetech.com/tags/cifs/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.jboetech.com/tags/linux/</link>
+      <pubDate>Sun, 19 Jan 2025 14:19:00 +0000</pubDate>
+      
+      <guid>https://blog.jboetech.com/tags/linux/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://blog.jboetech.com/tags/network/</link>
+      <pubDate>Sun, 19 Jan 2025 14:19:00 +0000</pubDate>
+      
+      <guid>https://blog.jboetech.com/tags/network/</guid>
       <description></description>
       <content></content>
     </item>
