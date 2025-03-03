@@ -79,10 +79,6 @@ pagerSize = 5
 
       [languages.en.menu]
         [[languages.en.menu.main]]
-          identifier = "home"
-          name = "Home"
-          url = "/"
-        [[languages.en.menu.main]]
           identifier = "linux"
           name = "Linux"
           url = "/tags/linux"
