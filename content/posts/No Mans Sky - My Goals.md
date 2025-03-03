@@ -1,13 +1,13 @@
 ---
 title: No Mans Sky - My Goals
-Date: 2025-03-03
+Date: 2025-02-28
 tags:
   - blog
   - no-mans-sky
   - gaming
 ---
 ![Image Description](/images/Pasted%20image%2020250303130238.png)
-## What I want to accomplish:
+# What I want to accomplish:
 1. Crash markets with Cobalt and Chlorine to make money
 2. Create "THE MARKET CRASHER"
 	a. Hauler class with plenty of storage for chlorine and cobalt
