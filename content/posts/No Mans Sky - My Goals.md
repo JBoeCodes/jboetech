@@ -6,8 +6,7 @@ tags:
   - no-mans-sky
   - gaming
 ---
-!![Image Description](/images/Pasted%20image%2020250303130238.png)
-
+![Image Description](/images/Pasted%20image%2020250303130238.png)
 ## What I want to accomplish:
 1. Crash markets with Cobalt and Chlorine to make money
 2. Create "THE MARKET CRASHER"
