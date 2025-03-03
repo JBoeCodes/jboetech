@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   
-    <title>Posts :: JBoeTech</title>
+    <title>JBoeTech Plex Install :: JBoeTech</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
+<meta name="description" content="Distro: Ubuntu Server notes: Install OpenSSH dependencies: nano, cifs-utils, Plex, OpenSSH See also: [[How I Auto Mount Network Drives in Linux]]
+Add Plex to the repo: echo deb [https://downloads.plex.tv/repo/deb](https://downloads.plex.tv/repo/deb) public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list curl [https://downloads.plex.tv/plex-keys/PlexSign.key](https://downloads.plex.tv/plex-keys/PlexSign.key) | sudo apt-key add - Update the repo sudo apt update Install Plex sudo apt install plexmediaserver Auto start Plex sudo systemctl enable plexmediaserver.service Connect to the web server: ip.address:32400/web
+Connect your files If you have not added network shares to your plex machine, see [[01192025 Auto Mount Network Drives in Linux]]
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="https://jboetech.com/posts/" />
+<link rel="canonical" href="https://jboetech.com/posts/jboetech-plex-install/" />
 
 
 
@@ -79,10 +82,13 @@
 
 
 <meta property="og:locale" content="en" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Posts">
-<meta property="og:description" content="" />
-<meta property="og:url" content="https://jboetech.com/posts/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="JBoeTech Plex Install">
+<meta property="og:description" content="Distro: Ubuntu Server notes: Install OpenSSH dependencies: nano, cifs-utils, Plex, OpenSSH See also: [[How I Auto Mount Network Drives in Linux]]
+Add Plex to the repo: echo deb [https://downloads.plex.tv/repo/deb](https://downloads.plex.tv/repo/deb) public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list curl [https://downloads.plex.tv/plex-keys/PlexSign.key](https://downloads.plex.tv/plex-keys/PlexSign.key) | sudo apt-key add - Update the repo sudo apt update Install Plex sudo apt install plexmediaserver Auto start Plex sudo systemctl enable plexmediaserver.service Connect to the web server: ip.address:32400/web
+Connect your files If you have not added network shares to your plex machine, see [[01192025 Auto Mount Network Drives in Linux]]
+" />
+<meta property="og:url" content="https://jboetech.com/posts/jboetech-plex-install/" />
 <meta property="og:site_name" content="JBoeTech" />
 
   <meta property="og:image" content="https://jboetech.com/og-image.png">
@@ -91,10 +97,10 @@
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2025-03-03 00:00:00 &#43;0000 UTC" />
 
 
 
-  <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="JBoeTech" />
 
 
 
@@ -185,86 +191,34 @@
 
   <div class="content">
     
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://jboetech.com/posts/jboetech-plex-install/">JBoeTech Plex Install</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-03-03</time></div>
+
   
-  <div class="posts">
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="https://jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/">How I Auto Mount Network Drives in Linux</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://jboetech.com/tags/linux/">linux</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/network/">network</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/cifs/">cifs</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/blog/">blog</a>&nbsp;
-            
-          </span>
-        
-
-        
+    <span class="post-tags">
+      
+      #<a href="https://jboetech.com/tags/linux/">linux</a>&nbsp;
+      
+      #<a href="https://jboetech.com/tags/network/">network</a>&nbsp;
+      
+      #<a href="https://jboetech.com/tags/plex/">plex</a>&nbsp;
+      
+      #<a href="https://jboetech.com/tags/server/">server</a>&nbsp;
+      
+      #<a href="https://jboetech.com/tags/blog/">blog</a>&nbsp;
+      
+    </span>
+  
+  
 
 
-        <div class="post-content">
-          
-            <h1 id="steps">Steps</h1>
-<ol>
-<li>
-<p><strong>Install cifs-utils</strong>: This package is necessary for mounting CIFS/SMB shares. You can install it using your distribution’s package manager. For example, on Debian-based systems, you can use:</p>
-<pre tabindex="0"><code>sudo apt-get install cifs-utils
-</code></pre><p>On Arch Linux, you can use:</p>
-<pre tabindex="0"><code>sudo pacman -S cifs-utils
-</code></pre></li>
-<li>
-<p><strong>Create a Mount Point</strong>: Create a directory where the network drive will be mounted. For example:</p>
-<pre tabindex="0"><code>sudo mkdir /mnt/networkdrivename
-</code></pre></li>
-<li>
-<p><strong>Edit /etc/fstab</strong>: Add an entry to your <code>/etc/fstab</code> file to automatically mount the network drive at boot. Use the following format:</p>
-          
-        </div>
+  
 
-        
-           <div>
-            <a class="read-more button inline" href="/posts/how-i-auto-mount-network-drives-in-linux/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="https://jboetech.com/posts/jboetech-plex-install/">JBoeTech Plex Install</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://jboetech.com/tags/linux/">linux</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/network/">network</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/plex/">plex</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/server/">server</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/blog/">blog</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p>Distro: Ubuntu Server
+  <div class="post-content"><div>
+        <p>Distro: Ubuntu Server
 notes: Install OpenSSH
 dependencies: nano, cifs-utils, Plex, OpenSSH
 See also: [[How I Auto Mount Network Drives in Linux]]</p>
@@ -293,75 +247,43 @@ ip.address:32400/web</p>
 <li>
 <p>Connect your files
 If you have not added network shares to your plex machine, see [[01192025 Auto Mount Network Drives in Linux]]</p>
-          
-        </div>
-
-        
-           <div>
-            <a class="read-more button inline" href="/posts/jboetech-plex-install/">Read more</a>
-          </div>
-        
-      </article>
-    
-      <article class="post on-list">
-        <h2 class="post-title">
-          <a href="https://jboetech.com/posts/no-mans-sky---my-goals/">No Mans Sky - My Goals</a>
-        </h2>
-        <div class="post-meta"><time class="post-date">2025-03-03</time></div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://jboetech.com/tags/blog/">blog</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/no-mans-sky/">no-mans-sky</a>&nbsp;
-            
-            #<a href="https://jboetech.com/tags/gaming/">gaming</a>&nbsp;
-            
-          </span>
-        
-
-        
-
-
-        <div class="post-content">
-          
-            <p><img src="/images/Pasted%20image%2020250303130238.png" alt="Image Description"></p>
-<h2 id="what-i-want-to-accomplish">What I want to accomplish:</h2>
-<ol>
-<li>Crash markets with Cobalt and Chlorine to make money</li>
-<li>Create &ldquo;THE MARKET CRASHER&rdquo;
-a. Hauler class with plenty of storage for chlorine and cobalt</li>
-<li>Oxygen farms everywhere</li>
-<li>Cool starter base</li>
-<li>S class freighter</li>
-<li>Experience the new content</li>
-<li>Create a stasis device farm</li>
-<li>have multiple bases on multiple planets
-b. 1 for each farm or other reasons</li>
-<li>Gas giants, Ruins, Other new generated planets</li>
-<li>Cool freighter base</li>
-<li>more?&hellip;</li>
+</li>
 </ol>
-          
-        </div>
 
-        
-           <div>
-            <a class="read-more button inline" href="/posts/no-mans-sky---my-goals/">Read more</a>
-          </div>
-        
-      </article>
+      </div></div>
+
+  
     
-
-    <div class="pagination">
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
   <div class="pagination__buttons">
     
+      <a href="https://jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/" class="button inline prev">
+        How I Auto Mount Network Drives in Linux
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="https://jboetech.com/posts/no-mans-sky---my-goals/" class="button inline next">
+        No Mans Sky - My Goals
+      </a>
     
   </div>
 </div>
 
-  </div>
+
+  
+
+  
+    
+
+  
+</article>
 
   </div>
 
