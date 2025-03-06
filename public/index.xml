@@ -6,7 +6,26 @@
     <description>Recent content on JBoeTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jboetech.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jboetech.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>talking to jayd</title>
+      <link>https://jboetech.com/posts/test-post/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jboetech.com/posts/test-post/</guid>
+      <description>&lt;h2 id=&#34;this-is-a-test&#34;&gt;This is a test&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;how cool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://jboetech.com/images/Pasted%20image%2020250306152655.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;this-is-a-test&#34;&gt;This is a test&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;how cool&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://jboetech.com/images/Pasted%20image%2020250306152655.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+</content>
+    </item>
+    
     <item>
       <title>How I Auto Mount Network Drives in Linux</title>
       <link>https://jboetech.com/posts/how-i-auto-mount-network-drives-in-linux/</link>
