@@ -6,13 +6,23 @@
     <description>Recent content in Tags on JBoeTech</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jboetech.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://jboetech.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
       <link>https://jboetech.com/tags/blog/</link>
-      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>https://jboetech.com/tags/blog/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://jboetech.com/tags/test/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://jboetech.com/tags/test/</guid>
       <description></description>
       <content></content>
     </item>
